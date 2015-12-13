@@ -1,0 +1,172 @@
+fileFormatVersion: 2
+guid: 4e213aa4817a0894090edd01d6db73e4
+timeCreated: 1449468226
+licenseType: Free
+ModelImporter:
+  serializedVersion: 18
+  fileIDToRecycleName:
+    100000: Camera
+    100002: Camera.target
+    100004: Group1
+    100006: //RootNode
+    100008: MANNEQUIN1
+    100010: Mesh01
+    100012: Mesh02
+    100014: Mesh03
+    100016: Mesh04
+    100018: Mesh05
+    100020: Mesh06
+    100022: Mesh07
+    100024: Mesh08
+    100026: Mesh09
+    100028: Mesh10
+    100030: Mesh11
+    100032: Mesh12
+    100034: Model
+    100036: skpJIQaiJ1
+    100038: stockman10
+    100040: stockman_0
+    100042: stockman_1
+    400000: Camera
+    400002: Camera.target
+    400004: Group1
+    400006: //RootNode
+    400008: MANNEQUIN1
+    400010: Mesh01
+    400012: Mesh02
+    400014: Mesh03
+    400016: Mesh04
+    400018: Mesh05
+    400020: Mesh06
+    400022: Mesh07
+    400024: Mesh08
+    400026: Mesh09
+    400028: Mesh10
+    400030: Mesh11
+    400032: Mesh12
+    400034: Model
+    400036: skpJIQaiJ1
+    400038: stockman10
+    400040: stockman_0
+    400042: stockman_1
+    2300000: Group1
+    2300002: MANNEQUIN1
+    2300004: Mesh01
+    2300006: Mesh02
+    2300008: Mesh03
+    2300010: Mesh04
+    2300012: Mesh05
+    2300014: Mesh06
+    2300016: Mesh07
+    2300018: Mesh08
+    2300020: Mesh09
+    2300022: Mesh10
+    2300024: Mesh11
+    2300026: Mesh12
+    2300028: Model
+    2300030: skpJIQaiJ1
+    2300032: stockman10
+    2300034: stockman_0
+    2300036: stockman_1
+    3300000: Group1
+    3300002: MANNEQUIN1
+    3300004: Mesh01
+    3300006: Mesh02
+    3300008: Mesh03
+    3300010: Mesh04
+    3300012: Mesh05
+    3300014: Mesh06
+    3300016: Mesh07
+    3300018: Mesh08
+    3300020: Mesh09
+    3300022: Mesh10
+    3300024: Mesh11
+    3300026: Mesh12
+    3300028: Model
+    3300030: skpJIQaiJ1
+    3300032: stockman10
+    3300034: stockman_0
+    3300036: stockman_1
+    4300000: MANNEQUIN1
+    4300002: Group1
+    4300004: Mesh03
+    4300006: Mesh04
+    4300008: Mesh05
+    4300010: Mesh06
+    4300012: Mesh07
+    4300014: Mesh08
+    4300016: Mesh09
+    4300018: Mesh10
+    4300020: Mesh11
+    4300022: Mesh12
+    4300024: skpJIQaiJ1
+    4300026: Model
+    4300028: Mesh01
+    4300030: stockman10
+    4300032: stockman_0
+    4300034: stockman_1
+    4300036: Mesh02
+  materials:
+    importMaterials: 1
+    materialName: 0
+    materialSearch: 1
+  animations:
+    legacyGenerateAnimations: 4
+    bakeSimulation: 0
+    optimizeGameObjects: 0
+    motionNodeName: 
+    animationImportErrors: 
+    animationImportWarnings: 
+    animationRetargetingWarnings: 
+    animationDoRetargetingWarnings: 0
+    animationCompression: 1
+    animationRotationError: .5
+    animationPositionError: .5
+    animationScaleError: .5
+    animationWrapMode: 0
+    extraExposedTransformPaths: []
+    clipAnimations: []
+    isReadable: 1
+  meshes:
+    lODScreenPercentages: []
+    globalScale: 1
+    meshCompression: 0
+    addColliders: 0
+    importBlendShapes: 1
+    swapUVChannels: 0
+    generateSecondaryUV: 0
+    useFileUnits: 1
+    optimizeMeshForGPU: 1
+    keepQuads: 0
+    weldVertices: 1
+    secondaryUVAngleDistortion: 8
+    secondaryUVAreaDistortion: 15.000001
+    secondaryUVHardAngle: 88
+    secondaryUVPackMargin: 4
+    useFileScale: 1
+  tangentSpace:
+    normalSmoothAngle: 60
+    splitTangentsAcrossUV: 1
+    normalImportMode: 0
+    tangentImportMode: 1
+  importAnimation: 1
+  copyAvatar: 0
+  humanDescription:
+    human: []
+    skeleton: []
+    armTwist: .5
+    foreArmTwist: .5
+    upperLegTwist: .5
+    legTwist: .5
+    armStretch: .0500000007
+    legStretch: .0500000007
+    feetSpacing: 0
+    rootMotionBoneName: 
+    hasTranslationDoF: 0
+  lastHumanDescriptionAvatarSource: {instanceID: 0}
+  animationType: 0
+  humanoidOversampling: 1
+  additionalBone: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

@@ -1,0 +1,591 @@
+fileFormatVersion: 2
+guid: 6f3e27ddc34acb94cb172777164f3f96
+timeCreated: 1448760471
+licenseType: Free
+ModelImporter:
+  serializedVersion: 18
+  fileIDToRecycleName:
+    100000: Clothes_on_hangers
+    100002: Component_2
+    100004: Component_7
+    100006: //RootNode
+    100008: Grey
+    100010: group_0
+    100012: group_1
+    100014: group_10
+    100016: group_11
+    100018: group_12
+    100020: group_2
+    100022: group_2 1
+    100024: group_2 2
+    100026: group_2 3
+    100028: group_2 4
+    100030: group_3
+    100032: group_3 1
+    100034: group_3 2
+    100036: group_3 3
+    100038: group_3 4
+    100040: group_4
+    100042: group_5
+    100044: group_6
+    100046: group_7
+    100048: group_8
+    100050: group_9
+    100052: ID100
+    100054: ID104
+    100056: ID108
+    100058: ID112
+    100060: ID116
+    100062: ID120
+    100064: ID124
+    100066: ID128
+    100068: ID132
+    100070: ID136
+    100072: ID14
+    100074: ID140
+    100076: ID144
+    100078: ID148
+    100080: ID152
+    100082: ID176
+    100084: ID176 1
+    100086: ID176 2
+    100088: ID176 3
+    100090: ID176 4
+    100092: ID192
+    100094: ID198
+    100096: ID20
+    100098: ID202
+    100100: ID206
+    100102: ID210
+    100104: ID214
+    100106: ID218
+    100108: ID222
+    100110: ID226
+    100112: ID230
+    100114: ID234
+    100116: ID238
+    100118: ID24
+    100120: ID261
+    100122: ID267
+    100124: ID271
+    100126: ID275
+    100128: ID279
+    100130: ID28
+    100132: ID283
+    100134: ID287
+    100136: ID291
+    100138: ID295
+    100140: ID299
+    100142: ID303
+    100144: ID307
+    100146: ID311
+    100148: ID315
+    100150: ID319
+    100152: ID32
+    100154: ID323
+    100156: ID327
+    100158: ID331
+    100160: ID335
+    100162: ID339
+    100164: ID343
+    100166: ID347
+    100168: ID351
+    100170: ID36
+    100172: ID363
+    100174: ID382
+    100176: ID388
+    100178: ID394
+    100180: ID40
+    100182: ID400
+    100184: ID406
+    100186: ID412
+    100188: ID418
+    100190: ID424
+    100192: ID428
+    100194: ID432
+    100196: ID436
+    100198: ID44
+    100200: ID440
+    100202: ID444
+    100204: ID448
+    100206: ID452
+    100208: ID456
+    100210: ID460
+    100212: ID464
+    100214: ID468
+    100216: ID472
+    100218: ID476
+    100220: ID48
+    100222: ID480
+    100224: ID484
+    100226: ID488
+    100228: ID492
+    100230: ID496
+    100232: ID500
+    100234: ID504
+    100236: ID508
+    100238: ID512
+    100240: ID516
+    100242: ID52
+    100244: ID520
+    100246: ID524
+    100248: ID528
+    100250: ID532
+    100252: ID536
+    100254: ID540
+    100256: ID544
+    100258: ID548
+    100260: ID552
+    100262: ID556
+    100264: ID56
+    100266: ID560
+    100268: ID564
+    100270: ID568
+    100272: ID572
+    100274: ID590
+    100276: ID596
+    100278: ID60
+    100280: ID602
+    100282: ID608
+    100284: ID614
+    100286: ID620
+    100288: ID626
+    100290: ID630
+    100292: ID634
+    100294: ID638
+    100296: ID64
+    100298: ID642
+    100300: ID646
+    100302: ID650
+    100304: ID654
+    100306: ID658
+    100308: ID662
+    100310: ID666
+    100312: ID670
+    100314: ID674
+    100316: ID678
+    100318: ID68
+    100320: ID682
+    100322: ID686
+    100324: ID690
+    100326: ID694
+    100328: ID698
+    100330: ID702
+    100332: ID706
+    100334: ID710
+    100336: ID714
+    100338: ID718
+    100340: ID72
+    100342: ID722
+    100344: ID726
+    100346: ID730
+    100348: ID734
+    100350: ID738
+    100352: ID742
+    100354: ID746
+    100356: ID750
+    100358: ID754
+    100360: ID758
+    100362: ID76
+    100364: ID762
+    100366: ID766
+    100368: ID770
+    100370: ID774
+    100372: ID799
+    100374: ID80
+    100376: ID821
+    100378: ID829
+    100380: ID84
+    100382: ID842
+    100384: ID861
+    100386: ID88
+    100388: ID92
+    100390: ID96
+    100392: instance_0
+    100394: instance_1
+    100396: instance_2
+    100398: instance_3
+    100400: instance_4
+    100402: instance_5
+    100404: instance_6
+    100406: instance_7
+    100408: instance_8
+    100410: Last Saved SketchUp View
+    100412: skeF
+    100414: skeF 1
+    100416: skeF 2
+    100418: skeF 3
+    100420: skeF 4
+    400000: Clothes_on_hangers
+    400002: Component_2
+    400004: Component_7
+    400006: Grey
+    400008: //RootNode
+    400010: group_0
+    400012: group_1
+    400014: group_10
+    400016: group_11
+    400018: group_12
+    400020: group_2
+    400022: group_2 1
+    400024: group_2 2
+    400026: group_2 3
+    400028: group_2 4
+    400030: group_3
+    400032: group_3 1
+    400034: group_3 2
+    400036: group_3 3
+    400038: group_3 4
+    400040: group_4
+    400042: group_5
+    400044: group_6
+    400046: group_7
+    400048: group_8
+    400050: group_9
+    400052: ID100
+    400054: ID104
+    400056: ID108
+    400058: ID112
+    400060: ID116
+    400062: ID120
+    400064: ID124
+    400066: ID128
+    400068: ID132
+    400070: ID136
+    400072: ID14
+    400074: ID140
+    400076: ID144
+    400078: ID148
+    400080: ID152
+    400082: ID176
+    400084: ID176 1
+    400086: ID176 2
+    400088: ID176 3
+    400090: ID176 4
+    400092: ID192
+    400094: ID198
+    400096: ID20
+    400098: ID202
+    400100: ID206
+    400102: ID210
+    400104: ID214
+    400106: ID218
+    400108: ID222
+    400110: ID226
+    400112: ID230
+    400114: ID234
+    400116: ID238
+    400118: ID24
+    400120: ID261
+    400122: ID267
+    400124: ID271
+    400126: ID275
+    400128: ID279
+    400130: ID28
+    400132: ID283
+    400134: ID287
+    400136: ID291
+    400138: ID295
+    400140: ID299
+    400142: ID303
+    400144: ID307
+    400146: ID311
+    400148: ID315
+    400150: ID319
+    400152: ID32
+    400154: ID323
+    400156: ID327
+    400158: ID331
+    400160: ID335
+    400162: ID339
+    400164: ID343
+    400166: ID347
+    400168: ID351
+    400170: ID36
+    400172: ID363
+    400174: ID382
+    400176: ID388
+    400178: ID394
+    400180: ID40
+    400182: ID400
+    400184: ID406
+    400186: ID412
+    400188: ID418
+    400190: ID424
+    400192: ID428
+    400194: ID432
+    400196: ID436
+    400198: ID44
+    400200: ID440
+    400202: ID444
+    400204: ID448
+    400206: ID452
+    400208: ID456
+    400210: ID460
+    400212: ID464
+    400214: ID468
+    400216: ID472
+    400218: ID476
+    400220: ID48
+    400222: ID480
+    400224: ID484
+    400226: ID488
+    400228: ID492
+    400230: ID496
+    400232: ID500
+    400234: ID504
+    400236: ID508
+    400238: ID512
+    400240: ID516
+    400242: ID52
+    400244: ID520
+    400246: ID524
+    400248: ID528
+    400250: ID532
+    400252: ID536
+    400254: ID540
+    400256: ID544
+    400258: ID548
+    400260: ID552
+    400262: ID556
+    400264: ID56
+    400266: ID560
+    400268: ID564
+    400270: ID568
+    400272: ID572
+    400274: ID590
+    400276: ID596
+    400278: ID60
+    400280: ID602
+    400282: ID608
+    400284: ID614
+    400286: ID620
+    400288: ID626
+    400290: ID630
+    400292: ID634
+    400294: ID638
+    400296: ID64
+    400298: ID642
+    400300: ID646
+    400302: ID650
+    400304: ID654
+    400306: ID658
+    400308: ID662
+    400310: ID666
+    400312: ID670
+    400314: ID674
+    400316: ID678
+    400318: ID68
+    400320: ID682
+    400322: ID686
+    400324: ID690
+    400326: ID694
+    400328: ID698
+    400330: ID702
+    400332: ID706
+    400334: ID710
+    400336: ID714
+    400338: ID718
+    400340: ID72
+    400342: ID722
+    400344: ID726
+    400346: ID730
+    400348: ID734
+    400350: ID738
+    400352: ID742
+    400354: ID746
+    400356: ID750
+    400358: ID754
+    400360: ID758
+    400362: ID76
+    400364: ID762
+    400366: ID766
+    400368: ID770
+    400370: ID774
+    400372: ID799
+    400374: ID80
+    400376: ID821
+    400378: ID829
+    400380: ID84
+    400382: ID842
+    400384: ID861
+    400386: ID88
+    400388: ID92
+    400390: ID96
+    400392: instance_0
+    400394: instance_1
+    400396: instance_2
+    400398: instance_3
+    400400: instance_4
+    400402: instance_5
+    400404: instance_6
+    400406: instance_7
+    400408: instance_8
+    400410: Last Saved SketchUp View
+    400412: skeF
+    400414: skeF 1
+    400416: skeF 2
+    400418: skeF 3
+    400420: skeF 4
+    2300000: Component_2
+    2300002: Component_7
+    2300004: group_1
+    2300006: group_10
+    2300008: group_12
+    2300010: group_2
+    2300012: group_2 1
+    2300014: group_2 2
+    2300016: group_2 3
+    2300018: group_2 4
+    2300020: group_3
+    2300022: group_3 1
+    2300024: group_3 2
+    2300026: group_3 3
+    2300028: group_3 4
+    2300030: group_5
+    2300032: group_7
+    2300034: group_8
+    2300036: group_9
+    2300038: ID363
+    2300040: ID382
+    2300042: ID388
+    2300044: ID394
+    2300046: ID400
+    2300048: ID406
+    2300050: ID412
+    2300052: ID590
+    2300054: ID596
+    2300056: ID602
+    2300058: ID608
+    2300060: ID614
+    2300062: ID799
+    2300064: ID821
+    2300066: ID829
+    2300068: ID861
+    3300000: Component_2
+    3300002: Component_7
+    3300004: group_1
+    3300006: group_10
+    3300008: group_12
+    3300010: group_2
+    3300012: group_2 1
+    3300014: group_2 2
+    3300016: group_2 3
+    3300018: group_2 4
+    3300020: group_3
+    3300022: group_3 1
+    3300024: group_3 2
+    3300026: group_3 3
+    3300028: group_3 4
+    3300030: group_5
+    3300032: group_7
+    3300034: group_8
+    3300036: group_9
+    3300038: ID363
+    3300040: ID382
+    3300042: ID388
+    3300044: ID394
+    3300046: ID400
+    3300048: ID406
+    3300050: ID412
+    3300052: ID590
+    3300054: ID596
+    3300056: ID602
+    3300058: ID608
+    3300060: ID614
+    3300062: ID799
+    3300064: ID821
+    3300066: ID829
+    3300068: ID861
+    4300000: group_1
+    4300002: group_2
+    4300004: group_3
+    4300006: group_5
+    4300008: group_7
+    4300010: ID363
+    4300012: group_8
+    4300014: group_9
+    4300016: ID382
+    4300018: ID388
+    4300020: ID394
+    4300022: ID400
+    4300024: ID406
+    4300026: ID412
+    4300028: group_10
+    4300030: ID590
+    4300032: ID596
+    4300034: ID602
+    4300036: ID608
+    4300038: ID614
+    4300040: Component_7
+    4300042: ID799
+    4300044: Component_2
+    4300046: ID861
+    4300048: group_12
+    4300050: ID821
+    4300052: ID829
+    9500000: //RootNode
+  materials:
+    importMaterials: 1
+    materialName: 0
+    materialSearch: 1
+  animations:
+    legacyGenerateAnimations: 4
+    bakeSimulation: 0
+    optimizeGameObjects: 0
+    motionNodeName: 
+    animationImportErrors: 
+    animationImportWarnings: 
+    animationRetargetingWarnings: 
+    animationDoRetargetingWarnings: 0
+    animationCompression: 1
+    animationRotationError: .5
+    animationPositionError: .5
+    animationScaleError: .5
+    animationWrapMode: 0
+    extraExposedTransformPaths: []
+    clipAnimations: []
+    isReadable: 1
+  meshes:
+    lODScreenPercentages: []
+    globalScale: 1
+    meshCompression: 0
+    addColliders: 0
+    importBlendShapes: 1
+    swapUVChannels: 0
+    generateSecondaryUV: 0
+    useFileUnits: 1
+    optimizeMeshForGPU: 1
+    keepQuads: 0
+    weldVertices: 1
+    secondaryUVAngleDistortion: 8
+    secondaryUVAreaDistortion: 15.000001
+    secondaryUVHardAngle: 88
+    secondaryUVPackMargin: 4
+    useFileScale: 1
+  tangentSpace:
+    normalSmoothAngle: 60
+    splitTangentsAcrossUV: 1
+    normalImportMode: 0
+    tangentImportMode: 1
+  importAnimation: 1
+  copyAvatar: 0
+  humanDescription:
+    human: []
+    skeleton: []
+    armTwist: .5
+    foreArmTwist: .5
+    upperLegTwist: .5
+    legTwist: .5
+    armStretch: .0500000007
+    legStretch: .0500000007
+    feetSpacing: 0
+    rootMotionBoneName: 
+    hasTranslationDoF: 0
+  lastHumanDescriptionAvatarSource: {instanceID: 0}
+  animationType: 2
+  humanoidOversampling: 1
+  additionalBone: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

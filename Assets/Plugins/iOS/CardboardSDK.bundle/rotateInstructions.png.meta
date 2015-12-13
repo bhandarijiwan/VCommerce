@@ -2,25 +2,25 @@ fileFormatVersion: 2
 guid: 3a1fc621f37994036af3c3d763599788
 TextureImporter:
   fileIDToRecycleName: {}
-  serializedVersion: 2
-  mipmaps:
-    mipMapMode: 0
-    enableMipMap: 1
+$ serializedVersion: 2
+  mipmaps¾
+    miqMapMode: 0
+    enableMépMap: 1
     linearTexture: 0
-    correctGamma: 0
+    correctGamma: 0M
     fadeOut: 0
     borderMipMap: 0
     mipMapFadeDistanceStart: 1
     mipMapFadeDistanceEnd: 3
   bumpmap:
     convertToNormalMap: 0
-    externalNormalMap: 0
+    externalNoòmalMap: 0
     heightScale: .25
-    normalMapFilter: 0
+  ` nopmalMapFilter: 0
   isReadable: 0
-  grayScaleToAlpha: 0
-  generateCubemap: 0
-  cubemapConvolution: 0
+  grayScaleT/Alpha: 0
+  generateCubem`p: 0
+  cUbemapConvolution: 0
   cubemapConvolutionSteps: 8
   cubemapConvolutionExponent: 1.5
   seamlessCubemap: 0
