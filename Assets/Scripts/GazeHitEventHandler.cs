@@ -7,7 +7,7 @@ using UnityEngine.UI;
 
 public class GazeHitEventHandler : MonoBehaviour
 {
-
+	public static bool startGazeEvents;
     public float gazeTime ;
     public bool hit;
     public float curGazeTime = 0f;
@@ -53,6 +53,7 @@ public class GazeHitEventHandler : MonoBehaviour
     {
 		goToNext = false;
 
+		startGazeEvents = false;
 		itemsChecked = new List<string> ();
 
 		waitMSG = GameObject.Find ("WaitMSG");
@@ -65,10 +66,8 @@ public class GazeHitEventHandler : MonoBehaviour
 
     void Update()
     {
-
-        GameObjectHit = EventSystem.current.currentSelectedGameObject;
-
-        if (GameObjectHit)
+		GameObjectHit = EventSystem.current.currentSelectedGameObject;
+		if (GameObjectHit && startGazeEvents)
             if (GameObjectHit.layer == 8 || GameObjectHit.layer == 9) // layer 8 is the dress layer.
                 curGazeTime += Time.deltaTime;
             else
