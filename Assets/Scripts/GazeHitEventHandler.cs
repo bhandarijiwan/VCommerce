@@ -8,19 +8,16 @@ using UnityEngine.UI;
 public class GazeHitEventHandler : MonoBehaviour
 {
 
-    public float gazeTime = 5f;
+    public float gazeTime ;
     public bool hit;
     public float curGazeTime = 0f;
 
     public GameObject head;
+	[HideInInspector]
+	public GameObject GameObjectHit;
+	public GameObject infoView;
 
-    public GameObject GameObjectHit;
-
-    public GameObject infoView;
-
-    public GameObject mannequin;
-
-	public GameObject rigidBody;
+	public GameObject player;
 
 	private GameObject currentDress;
 
@@ -34,7 +31,17 @@ public class GazeHitEventHandler : MonoBehaviour
 	private bool goToNext;
 
 	private List<string> itemsChecked;
-    //private List<ObjectInfo> itemsInformation;
+
+
+	public Text NameVal;
+	public Text SizeVal;
+	public Text PriceVal;
+	public Text BrandVal;
+	public Text ShippingVal;
+	public Text MaterialVal;
+	public Text M_FVal;
+	public Button CheckedButton;
+
 
 
 	public Transform overlayTransform;
@@ -51,16 +58,7 @@ public class GazeHitEventHandler : MonoBehaviour
 		waitMSG = GameObject.Find ("WaitMSG");
 		waitMSG.SetActive (false);
 
-
-        infoView = GameObject.Find("InfoView");
-        infoView.SetActive(false);
-
-        head = GameObject.Find("CardboardHead");
-
-        mannequin = GameObject.Find("Female_Mannequin");
-        mannequin.SetActive(false);
-
-        rigidBody = GameObject.Find("PlayerRigidBody");
+		infoView.SetActive(false);
 
 		persistentObject = GameObject.Find ("PersistentObject");
 	}
@@ -77,55 +75,47 @@ public class GazeHitEventHandler : MonoBehaviour
             {
                 if (curGazeTime > 0)
                     curGazeTime = 0;
-                //curGazeTime -= 2*Time.deltaTime;
                 infoView.SetActive(false);
             }
 
 		if (curGazeTime >= gazeTime) {
-			if (GameObjectHit.layer == 8) {
+			if (GameObjectHit.layer == 8 && !infoView.activeInHierarchy) {
 				vSelectHandle ();
-			} else  if (GameObjectHit.layer == 9) {
-				vOverlayHandle ();
-			} else {
 			}
 		}
 		if (Cardboard.SDK.Triggered) {
-
-			if(GameObjectHit.layer==10)
-				mannequin.SetActive(false);
-			else
-				vTriggerPulled(infoView.activeSelf);
+			vTriggerPulled(true);
 		}
         
     }
 
     public void setGazedAt(bool gazedAt)
     {
-//		Debug.Log(gazedAt);
 		hit = gazedAt;
         GameObjectHit = (hit) ? (EventSystem.current.currentSelectedGameObject) : (null);
     }
 
     public void vSelectHandle()
     {
-        infoView.transform.position = GameObjectHit.GetComponent<Renderer>().bounds.center;
-        infoView.transform.rotation = head.transform.rotation;
-        infoView.transform.Translate(new Vector3(0f, 0f, -1f), Space.Self);
-		populateFields();
-		infoView.SetActive(true);
-		infoView.transform.Find ("Panel/Checked").gameObject.SetActive (itemsChecked.Contains(GameObjectHit.name));
 
-    }
+
+		Vector3 p = GameObjectHit.GetComponent<Renderer>().bounds.center;
+		Vector3 v = (player.transform.position - p).normalized;
+		infoView.transform.position = p + v * 1.30f;
+
+		infoView.transform.rotation = head.transform.rotation;
+        populateFields();
+		CheckedButton.gameObject.SetActive (itemsChecked.Contains (GameObjectHit.name));
+		infoView.SetActive(true);
+	}
     void vTriggerPulled(bool checkOut)
     {
 		if (checkOut)
         {
-
-			infoView.transform.Find("Panel/Checked").gameObject.SetActive(true);
+			CheckedButton.gameObject.SetActive (true);
 			PersistentData.itemInfo item  = new PersistentData.itemInfo(GameObjectHit.GetComponent<ObjectInfo>());
 			persistentObject.GetComponent<PersistentData>().itemList.Add(item);
 			itemsChecked.Add (GameObjectHit.name);
-			//DontDestroyOnLoad(GameObjectHit.GetComponent<ObjectInfo>());
 		}
         else
         {
@@ -138,50 +128,45 @@ public class GazeHitEventHandler : MonoBehaviour
     {
 
         ObjectInfo info = GameObjectHit.GetComponent<ObjectInfo>();
-
-        infoView.transform.Find("Panel/NameVal").GetComponent<Text>().text = info.Name;
-        infoView.transform.Find("Panel/SizeVal").GetComponent<Text>().text = info.Size;
-        infoView.transform.Find("Panel/PriceVal").GetComponent<Text>().text = info.Price.ToString();
-        infoView.transform.Find("Panel/BrandVal").GetComponent<Text>().text = info.brand;
-        infoView.transform.Find("Panel/ShippingVal").GetComponent<Text>().text = info.shipping;
-        infoView.transform.Find("Panel/MaterialVal").GetComponent<Text>().text = info.material;
-        infoView.transform.Find("Panel/M_FVal").GetComponent<Text>().text = info.malefemale;
+		NameVal.text = info.Name;
+		SizeVal.text = info.Size;
+		PriceVal.text = info.Price.ToString();
+		BrandVal.text = info.brand;
+		ShippingVal.text = info.shipping;
+		MaterialVal.text = info.material;
+		M_FVal.text = info.malefemale;
 
     }
-	private void vOverlayHandle ()
-	{ 
-		mannequin.SetActive (true);
-
-		if (currentDress != null)
-		{
-			Destroy(currentDress);
-			currentDress = null;
-		}
-		currentDress = Instantiate(prefabObject);
-		currentDress.transform.position = overlayTransform.position;
-		currentDress.transform.parent = mannequin.transform;
-		prefabObject.layer = 10;
-
-		// re-position the camera;
-		rigidBody.transform.position = overlayTransform.position;
-		rigidBody.transform.Translate (new Vector3 (0f, 0f, -1.5f), Space.Self);
-
-	}
+//	private void vOverlayHandle ()
+//	{ 
+//		mannequin.SetActive (true);
+//
+//		if (currentDress != null)
+//		{
+//			Destroy(currentDress);
+//			currentDress = null;
+//		}
+//		currentDress = Instantiate(prefabObject);
+//		currentDress.transform.position = overlayTransform.position;
+//		currentDress.transform.parent = mannequin.transform;
+//		prefabObject.layer = 10;
+//
+//		// re-position the camera;
+//		rigidBody.transform.position = overlayTransform.position;
+//		rigidBody.transform.Translate (new Vector3 (0f, 0f, -1.5f), Space.Self);
+//
+//	}
 
 	 IEnumerator takephoneout(float waittime){
 
 		waitMSG.SetActive (true);
 
 		infoView.SetActive (false);
-
-
-		Debug.Log (rigidBody.transform.forward);
-
-		waitMSG.transform.position = rigidBody.transform.position;
+		waitMSG.transform.position = player.transform.position;
 
 		waitMSG.transform.rotation = head.transform.rotation;
 
-		waitMSG.transform.Translate (rigidBody.transform.forward * -3.5f);
+		waitMSG.transform.Translate (player.transform.forward * -3.5f);
 
 		goToNext = true;
 

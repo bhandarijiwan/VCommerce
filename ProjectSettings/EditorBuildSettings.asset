@@ -7,7 +7,7 @@ EditorBuildSettings:
   m_Scenes:
   - enabled: 1
     path: Assets/_Scenes/Store.unity
-  - enabled: 1
+  - enabled: 0
     path: Assets/_Scenes/shoppingCart.unity
-  - enabled: 1
+  - enabled: 0
     path: Assets/_Scenes/checkoutscene.unity
